@@ -11,8 +11,6 @@ info:
     url: https://opensource.org/license/mit
 servers:
   - url: https://graph.microsoft.com
-security:
-  - bearerAuth: []
 paths:
   /v1.0/deviceManagement/managedDevices:
     get:
@@ -260,9 +258,3 @@ paths:
           description: Forbidden.
         "404":
           description: Mobile app not found.
-components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
